@@ -3,7 +3,9 @@
 // (Mainpage/script.js, PatientPage/script.js, DoctorPage/doctor.html,
 // AdminPage/admin.html, PharmacyDashboard/pharmacy-dashboard.html).
 
-export const API_BASE = import.meta.env.VITE_API_URL || "https://spring-boot-jwt-rbac-production.up.railway.app";
+
+export const API_BASE = "https://spring-boot-jwt-rbac-production.up.railway.app";
+
 
 export function getToken() {
   return localStorage.getItem("accessToken");
