@@ -1,0 +1,114 @@
+.coming-soon-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--grey-50, #f8fafb);
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.coming-soon-card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(11, 31, 58, 0.1);
+  max-width: 550px;
+  width: 100%;
+  text-align: center;
+}
+
+.coming-soon-icon-wrap {
+  width: 70px;
+  height: 70px;
+  background-color: var(--teal-faint, #E6F7F7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+}
+
+.coming-soon-icon {
+  font-size: 30px;
+}
+
+.coming-soon-title {
+  color: var(--navy, #0B1F3A);
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.coming-soon-subtitle {
+  color: var(--teal, #0D7377);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.coming-soon-description {
+  color: var(--grey-600, #4A5E72);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.coming-soon-contact-box {
+  background-color: var(--grey-50, #f8fafb);
+  border: 1px dashed var(--grey-200, #D8E0E8);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.contact-box-title {
+  margin: 0;
+  font-weight: 600;
+  color: var(--navy, #0B1F3A);
+}
+
+.contact-box-text {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: var(--grey-600, #4A5E72);
+}
+
+.coming-soon-action-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.coming-soon-back-btn {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 1.5px solid var(--grey-400, #8B9DB0);
+  color: var(--navy, #0B1F3A);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.coming-soon-back-btn:hover {
+  background-color: var(--grey-100, #f1f5f9);
+}
+
+.coming-soon-contact-btn {
+  padding: 10px 20px;
+  background-color: var(--teal, #0D7377);
+  border: none;
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.coming-soon-contact-btn:hover {
+  background-color: #0a5c5f;
+  transform: translateY(-1px);
+}
