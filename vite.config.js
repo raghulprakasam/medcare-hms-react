@@ -20,7 +20,7 @@ export default defineConfig({
         changeOrigin: true,
         secure: false,
       },
-      // ப்ராஜெக்ட்டில் வேறு ஏதாவது API (எ.கா: /api, /patient) இருந்தால் அதையும் கீழே சேர்க்கலாம்
+     
       '/api': {
         target: 'http://localhost:8080',
         changeOrigin: true,
