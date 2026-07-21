@@ -4,7 +4,8 @@
 // AdminPage/admin.html, PharmacyDashboard/pharmacy-dashboard.html).
 
 
-export const API_BASE = "https://spring-boot-jwt-rbac-production.up.railway.app";
+export const API_BASE = "https://spring-boot-jwt-rbac.onrender.com";
+
 
 
 export function getToken() {
