@@ -5,10 +5,10 @@ export default function DynamicComingSoon() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // ஹோம் பேஜில் இருந்து வரும் தரவுகளை எடுக்கிறோம். (Title & Type)
+
   const { title = "This Feature", type = "feature" } = location.state || {};
 
-  // கிளிக் செய்த வகைக்கு ஏற்ப மெசேஜை மாற்றும் Logic:
+ 
   const getContext = () => {
     switch (type) {
       case "department":
