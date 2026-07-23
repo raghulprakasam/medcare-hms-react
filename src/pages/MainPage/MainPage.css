@@ -304,3 +304,69 @@ footer { background: var(--maroon-d); color: rgba(255,255,255,.8); padding: 64px
 .fade-in { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
 .fade-in.visible { opacity: 1; transform: none; }
 
+/* ── COMPACT MOBILE MODALS & FORMS ── */
+.modal-bg {
+  padding: 12px;
+}
+
+.modal {
+  max-width: 480px;
+  width: 100%;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+}
+
+.modal-body {
+  padding: 20px 24px;
+  overflow-y: auto;
+  max-height: calc(92vh - 70px);
+}
+
+/* Compact form spacing */
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.form-input, .portal-input {
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
+/* Tighter grid rows for mobile */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.modal-submit {
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Mobile Specific Tweaks */
+@media(max-width: 480px) {
+  .modal-body {
+    padding: 16px;
+  }
+  
+  /* Keep short fields side-by-side even on small screens to save vertical space */
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  
+  /* Except for passwords or long inputs if they get cramped, or let both fit compact */
+  h3 {
+    font-size: 18px !important;
+    margin-bottom: 12px !important;
+  }
+}
