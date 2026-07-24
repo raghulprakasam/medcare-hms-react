@@ -37,7 +37,7 @@ The app expects the existing Spring Boot backend at
 different backend, edit `.env`:
 
 ```
-VITE_API_URL=http://your-backend-host:port
+VITE_API_URL=https://spring-boot-jwt-rbac.onrender.com
 ```
 
 No other code changes are required — every API call in the app goes through
